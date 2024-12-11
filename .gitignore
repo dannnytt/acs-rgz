@@ -1,1 +1,34 @@
-jenkins/jenkins_home/caches/git-d5b5c37866bc0003170eb8e8551048fa/
+# Игнорируем системные файлы и файлы IDE
+*.pyc
+*.pyo
+*.log
+__pycache__/
+*.swp
+.DS_Store
+.idea/
+.vscode/
+*.iml
+
+# Игнорируем виртуальное окружение Python
+venv/
+.env
+.env.local
+
+# Игнорируем локальные данные Jenkins
+jenkins/jenkins_home/
+
+# Игнорируем файлы сборки Docker
+*.tar
+*.lock
+
+# Игнорируем сертификаты и ключи (если они должны быть защищены)
+nginx/certs/*.crt
+nginx/certs/*.key
+
+# Игнорируем временные файлы системы
+*.tmp
+*.bak
+*.~*
+
+# Игнорируем node_modules (если используются в проекте для frontend)
+node_modules/
