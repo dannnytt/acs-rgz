@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Клонирование репозитория') {
             steps {
-                git branch: 'main', url: 'https://gitlab.com/sibsutis-repo/sibsutis-labs/acs-rgz'
+                git branch: 'main', url: 'https://github.com/dannnytt/acs-rgz'
             }
         }
         
