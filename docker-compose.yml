@@ -1,0 +1,41 @@
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins-container
+    ports:
+      - "50000:50000"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./jenkins/jenkins_home:/var/jenkins_home
+    networks:
+      - ci_cd_network
+    restart: unless-stopped
+    
+  
+  app:
+    container_name: flask-container
+    build: ./app
+    image: flask_app-image:latest
+    ports:
+      - "5000:5000"
+    environment:
+      - CONTAINER_NAME=flask-app
+    networks:
+      - ci_cd_network
+
+  nginx:
+    container_name: nginx-container
+    build: ./nginx
+    image: nginx-image:latest
+    ports:
+      - "443:443"
+    depends_on:
+      - app
+    volumes:
+      - ./nginx/certs:/etc/ssl/nginx
+    networks:
+      - ci_cd_network
+
+networks:
+  ci_cd_network:
