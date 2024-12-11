@@ -28,23 +28,13 @@ pipeline {
                 script {
                     try {
                         // Удаление всех старых контейнеров, связанных с сервисом app
-                        def containers = sh(script: 'docker ps -aqf "name=flask-container"', returnStdout: true).trim().split("\n")
-                        containers.each {
-                            sh "docker rm -f ${it}"
-                        }
+                        sh "docker-compose down --rmi all --volumes ${SERVICE_NAME}"
 
-                        // Удаление всех ресурсов сервиса
-                        sh """
-                            docker-compose down --rmi all --volumes ${SERVICE_NAME} || echo 'Не удалось удалить контейнеры'
-                        """
+                        // Перезапуск сервиса
+                        sh "docker-compose up -d ${SERVICE_NAME}"
                     } catch (Exception e) {
-                        error "Ошибка при остановке и удалении контейнеров: ${e.message}"
+                        error "Ошибка при развертывании контейнера: ${e.message}"
                     }
-
-                    // Перезапуск сервиса
-                    sh """
-                        docker-compose up -d ${SERVICE_NAME}
-                    """
                 }
             }
         }
