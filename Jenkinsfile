@@ -23,14 +23,18 @@ pipeline {
             }
         }
 
-       stage('Развертывание контейнера') {
+        stage('Развертывание контейнера') {
             steps {
                 script {
-                    sh """
-                        docker-compose stop ${SERVICE_NAME} || echo 'Сервис ${SERVICE_NAME} не запущен. Продолжение...'
-                        docker-compose rm -f ${SERVICE_NAME} || echo 'Контейнер ${SERVICE_NAME} не найден. Продолжение...'
-                    """
-                
+                    try {
+                        sh """
+                            docker-compose stop ${SERVICE_NAME} || echo 'Сервис ${SERVICE_NAME} не запущен. Продолжение...'
+                            docker-compose rm -f ${SERVICE_NAME} || echo 'Контейнер ${SERVICE_NAME} не найден. Продолжение...'
+                        """
+                    } catch (Exception e) {
+                        error "Ошибка при остановке и удалении контейнера ${SERVICE_NAME}: ${e.message}"
+                    }
+
                     sh """
                         docker-compose up -d ${SERVICE_NAME}
                     """
