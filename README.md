@@ -1,1 +1,1 @@
-# acs-rgz (Jenkins + gitlab)
+# acs-rgz (Jenkins + github)
