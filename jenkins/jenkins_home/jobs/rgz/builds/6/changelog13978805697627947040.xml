@@ -1,0 +1,151 @@
+commit d571554b935073e4a19593808f4ef276b6268dbe
+tree f227088476f435332b6509681373ed8c4d4b19be
+parent 77f9e3f2e6cf46aa29013adc17a85559e142e095
+author dannnytt <danielternovski@gmail.com> 2024-12-12 00:01:46 +0700
+committer dannnytt <danielternovski@gmail.com> 2024-12-12 00:01:46 +0700
+
+    изменения в jenkinsfile
+
+
+:100644 100644 72d5cdd60949b3b1137d2baea2204f85096dd31b 0da29944976270b9170382843c2bb247fc189c29 M	.gitignore
+:100644 100644 ec8385a0b457fe7f40ef45a062906fc8ac79d29e 46bd59dae802b18654f81fb87ac9c79c752335a5 M	Jenkinsfile
+:000000 100644 0000000000000000000000000000000000000000 fe28ac22913dd0a6a2ec1113cd69eab8767dcda5 A	jenkins/jenkins_home/.bash_history
+:100644 100644 9cf3c73fbcb8ad129151e2d8ceca6a56cd66aac2 c0589e93aea2b425458a08fe855a1c96a399c23b R099	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-052d3850d7f2-Debian GNU/Linux-12-en-.properties	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-09aca72c437c-Debian GNU/Linux-12-en-.properties
+:100644 000000 0d43b90501f42788afdd035aba7740576e5ca9ea 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-1d992df264f4-Debian GNU/Linux-12-en-.properties
+:100644 000000 095477f11ae812cf173a59d79e37cbc4e7653f17 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-5a5b6a5f7cae-Debian GNU/Linux-12-en-.properties
+:100644 000000 264c3ff4addd3e0e2c992798068036186bb58fce 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-67cb66a6a70c-Debian GNU/Linux-12-en-.properties
+:100644 000000 16fd891eb22209bcac28dbcb1b17b04f3de017ca 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-761606899cf0-Debian GNU/Linux-12-en-.properties
+:100644 000000 bddf549b46a915b70b435e73f2a5af83bd657aac 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-7e751360a5a9-Debian GNU/Linux-12-en-.properties
+:100644 000000 2e9b3fa6cb306d6621cb8566d1358f81a6a8d66a 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-8f1a56dd8503-Debian GNU/Linux-12-en-.properties
+:100644 000000 d7babe0333ce618d5ce7c7d0e0b600c358df93a9 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-b4ed4a755010-Debian GNU/Linux-12-en-.properties
+:100644 000000 4c04bc26c355343ebad9b56a190eea04968b7366 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-bfbe12af3a58-Debian GNU/Linux-12-en-.properties
+:100644 000000 d6b80553a134dbe75c02207b207f3890fbbebddd 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-c7b540858646-Debian GNU/Linux-12-en-.properties
+:100644 000000 5fbcae897474059181ed8b14a37f78125d0ae24e 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-c7b63b1f4684-Debian GNU/Linux-12-en-.properties
+:100644 000000 a58f033a419e34a6962f0fabda987d11aec9ed9d 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-dd8d5734789c-Debian GNU/Linux-12-en-.properties
+:100644 000000 8c57a71630a03503a1dafe860d840ea39bb33227 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-e67e461235f3-Debian GNU/Linux-12-en-.properties
+:100644 000000 4ba328ee22b137fb054d32d42cd4c0794f236bf0 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.java/fonts/17.0.13/fcinfo-1-f7bf2cff3957-Debian GNU/Linux-12-en-.properties
+:100644 000000 c7930257dfef505fd996e1d6f22f2f35149990d0 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/.owner
+:100644 000000 846530d6f672c9a64b1892b978b6d93ac0d96fbd 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/com.dabsquared.gitlabjenkins.GitLabPushTrigger.xml
+:100644 000000 af8baaa83a850673b0005ef20e144921aa5699d1 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/com.dabsquared.gitlabjenkins.connection.GitLabConnectionConfig.xml
+:100644 100644 6cac081c821dacaa875e77681c79052568817607 298d4f60a0b046f7a48271c27df058328f1ac7d2 M	jenkins/jenkins_home/config.xml
+:100644 100644 c2fa6b5b73c709204eb408aa772902ee836d17b3 548cfa542cdd6a4358b38cc87946cf2a31324f64 M	jenkins/jenkins_home/copy_reference_file.log
+:100644 100644 9f554c0fc68235996fdefbfd6c39275ab3556b21 277c29653ec9bc30ac351e2064d5509d2b8cd958 M	jenkins/jenkins_home/credentials.xml
+:100644 100644 1d9f0d91d7cca56eeb7ccdcaf78ad5f69f1cc155 b44dc173ff185fc039c43a5de40b00fba34a01ba M	jenkins/jenkins_home/identity.key.enc
+:100644 100644 6028f8a4af022f154440e9a61d1a2b9955228b11 426ad949bb856d28e911e047290b67a8658db823 M	jenkins/jenkins_home/jenkins.telemetry.Correlator.xml
+:000000 100644 0000000000000000000000000000000000000000 fd9f3dcf1f471c2474875136c9d41bbab38f5be0 A	jenkins/jenkins_home/jobs/rgz/builds/3/build.xml
+:100644 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 R100	jenkins/jenkins_home/plugins/generic-webhook-trigger/.timestamp2	jenkins/jenkins_home/jobs/rgz/builds/3/changelog16486716602818757700.xml
+:000000 100644 0000000000000000000000000000000000000000 f264c4588406390ea4df9deb860455bb6bceac64 A	jenkins/jenkins_home/jobs/rgz/builds/3/log
+:000000 100644 0000000000000000000000000000000000000000 8ab2142c286cfe064bf95ee58bc72eabaffb974c A	jenkins/jenkins_home/jobs/rgz/builds/3/log-index
+:000000 100644 0000000000000000000000000000000000000000 2ef4c6f90bb830ce7cbaca67439826a24bfd1658 A	jenkins/jenkins_home/jobs/rgz/builds/3/workflow-completed/flowNodeStore.xml
+:000000 100644 0000000000000000000000000000000000000000 e1ff2bad317921d34317157f86c080d10e8e09cf A	jenkins/jenkins_home/jobs/rgz/builds/4/build.xml
+:100644 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 R100	jenkins/jenkins_home/plugins/gitlab-api/.timestamp2	jenkins/jenkins_home/jobs/rgz/builds/4/changelog14774647812910549789.xml
+:000000 100644 0000000000000000000000000000000000000000 5a36bad9f944cbbcc728a5085d9faf71a023311d A	jenkins/jenkins_home/jobs/rgz/builds/4/log
+:000000 100644 0000000000000000000000000000000000000000 32328e9887cc6bc8fe06ba7338252e59989609f8 A	jenkins/jenkins_home/jobs/rgz/builds/4/log-index
+:000000 100644 0000000000000000000000000000000000000000 6dd300b1862ec74c1afbbd4cd90317a364a45a31 A	jenkins/jenkins_home/jobs/rgz/builds/4/workflow-completed/flowNodeStore.xml
+:000000 100644 0000000000000000000000000000000000000000 5f03d6bc0493248602d06550d149554273a7e4c8 A	jenkins/jenkins_home/jobs/rgz/builds/5/build.xml
+:100644 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 R100	jenkins/jenkins_home/plugins/gitlab-plugin/.timestamp2	jenkins/jenkins_home/jobs/rgz/builds/5/changelog11281587906450619795.xml
+:000000 100644 0000000000000000000000000000000000000000 c209b47e49df60090e361590f7e1114408841ca8 A	jenkins/jenkins_home/jobs/rgz/builds/5/log
+:000000 100644 0000000000000000000000000000000000000000 1868e80d163687c59ecf476cee3464fb2c67eb56 A	jenkins/jenkins_home/jobs/rgz/builds/5/log-index
+:000000 100644 0000000000000000000000000000000000000000 0ee7b20bb963d2c509fe481bc0b07764c2e678e3 A	jenkins/jenkins_home/jobs/rgz/builds/5/workflow-completed/flowNodeStore.xml
+:100644 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 R100	jenkins/jenkins_home/plugins/jersey2-api/.timestamp2	jenkins/jenkins_home/jobs/rgz/builds/legacyIds
+:000000 100644 0000000000000000000000000000000000000000 ea7b520ca46d3592bf4391e434beb7ef6e6df348 A	jenkins/jenkins_home/jobs/rgz/builds/permalinks
+:000000 100644 0000000000000000000000000000000000000000 84e8be3542530fce9bf6f72ed193b544d582fc72 A	jenkins/jenkins_home/jobs/rgz/config.xml
+:000000 100644 0000000000000000000000000000000000000000 1e8b314962144c26d5e0e50fd29d2ca327864913 A	jenkins/jenkins_home/jobs/rgz/nextBuildNumber
+:100644 100644 04666728e1348e5aeb48689350a01edc9cf0835a fcf6f278b6ea29da6713a6dbe319087143470355 M	jenkins/jenkins_home/logs/health-checker.log
+:000000 100644 0000000000000000000000000000000000000000 de3d5a10b984710d14f3718a01e29a0e26169d67 A	jenkins/jenkins_home/org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+:100644 000000 40996e51a33f964fd3d4cc2a0bf0d792ed92de5e 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/generic-webhook-trigger.jpi
+:100644 000000 059a9185255d700ac770b44425973f01c1beabef 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/generic-webhook-trigger/META-INF/MANIFEST.MF
+:100644 000000 c161b1941bb75b499247fab1ed42d7c731eec50d 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/generic-webhook-trigger/META-INF/maven/org.jenkins-ci.plugins/generic-webhook-trigger/pom.properties
+:100644 000000 bb681f5c64dc800770b6a42919b77e22e7d0d3cd 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/generic-webhook-trigger/META-INF/maven/org.jenkins-ci.plugins/generic-webhook-trigger/pom.xml
+:100644 000000 69c9661ae471fcc610abd4aae1da0c51421ef9ce 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/generic-webhook-trigger/WEB-INF/lib/commons-ip-math-1.32.jar
+:100644 000000 04781154a43cb44dd162fbeff3affa28b82dddb3 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/generic-webhook-trigger/WEB-INF/lib/generic-webhook-trigger.jar
+:100644 000000 59c87d5140955a75196b36dd51da6f38aa6375a4 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/generic-webhook-trigger/WEB-INF/lib/java10-shim-20240325.1.jar
+:100644 000000 d2e2bac67c626cd6bd75f86463fd6489027d2d49 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/generic-webhook-trigger/WEB-INF/lib/java8-shim-20240325.1.jar
+:100644 000000 9becef68d82df4e1cde8cf3ff5709ba46f762277 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/generic-webhook-trigger/WEB-INF/lib/owasp-java-html-sanitizer-20240325.1.jar
+:100644 000000 4ff74f604337b11056c98c3f843fcdaf9ff6511e 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/generic-webhook-trigger/WEB-INF/licenses.xml
+:100644 000000 bba06c6a819753f07c8773ffed0b67d9282d1c82 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-api.jpi
+:100644 000000 ed38610453ceecee9fa3779da2287ccd804fdb9e 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-api/META-INF/MANIFEST.MF
+:100644 000000 3dbfe5acda800f8d4a8c954548e24dc70666f146 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-api/META-INF/maven/io.jenkins.plugins/gitlab-api/pom.properties
+:100644 000000 8f7178b7c2c6caa836cdea76522949fdf2a61ea2 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-api/META-INF/maven/io.jenkins.plugins/gitlab-api/pom.xml
+:100644 000000 a34989717989b235da4c5f905a6fbba5ec3102ad 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-api/WEB-INF/lib/gitlab-api.jar
+:100644 000000 4a4a05f8d5c5c6c97ebe0c4c9afb67f8c89f40de 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-api/WEB-INF/lib/gitlab4j-api-5.6.0.jar
+:100644 000000 8d720b23f83ce50360c64d3711f561cc90e86e88 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-api/WEB-INF/licenses.xml
+:100644 000000 efee85b13da222cd0305849f37d5d9140426965a 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin.jpi
+:100644 000000 98ebd194b70e33c2c506e3b92701853878baf29b 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/META-INF/MANIFEST.MF
+:100644 000000 f599925942ec71de78e76f743e7eb7c166694e8b 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/META-INF/maven/org.jenkins-ci.plugins/gitlab-plugin/pom.properties
+:100644 000000 28ea766f11339483ca428786b42f7c366733f6b8 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/META-INF/maven/org.jenkins-ci.plugins/gitlab-plugin/pom.xml
+:100644 000000 cdffeeaf19b7c36f82358bc59b41f6d97e97f25a 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/WEB-INF/lib/gitlab-plugin.jar
+:100644 000000 d68c9f7f36d2cfda66f0b89e0719b73b034143b5 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/WEB-INF/lib/jakarta.validation-api-2.0.2.jar
+:100644 000000 5effa7ee5f3f5b9b7a992677f4358c73353ce1eb 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/WEB-INF/lib/jboss-annotations-api_1.3_spec-2.0.1.Final.jar
+:100644 000000 3e45c9c3f53dfd9acbf390ebbe18cfaba7efed17 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/WEB-INF/lib/jboss-jaxb-api_2.3_spec-2.0.1.Final.jar
+:100644 000000 a8ffeb31437ecadb1fc5ed64f47823a00d964a6f 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/WEB-INF/lib/jboss-jaxrs-api_2.1_spec-2.0.1.Final.jar
+:100644 000000 42cd1e0a86e7bd42b47495e3c0936c599da8e39e 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/WEB-INF/lib/jboss-logging-3.4.1.Final.jar
+:100644 000000 b9b487caa3af3a32860dc1e0d68b84da62361b68 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/WEB-INF/lib/reactive-streams-1.0.3.jar
+:100644 000000 ab93862afe6d4fb448de1d0093f2d1b8dc4ce175 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/WEB-INF/lib/resteasy-client-3.15.6.Final.jar
+:100644 000000 4230f001581b6eaf76674696bf8ccc7a6aac1eaa 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/WEB-INF/lib/resteasy-jaxrs-3.15.6.Final.jar
+:100644 000000 44d1656b6aa40dcb7930f950cd2bdbfdaad309c6 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/WEB-INF/licenses.xml
+:100644 000000 e9d2976d3302d1a300e6e12e2556ad806b635997 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-allowedBranches.html
+:100644 000000 f0b26064916064a4dd07e7ec3ff3530dd0ea458a 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-buildName.html
+:100644 000000 41d159b89b1171533abcaa735d3a259af5635de2 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-connection.html
+:100644 000000 e6427581b20671069f19f57040c0f59df148935c 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-filterBranchesByRegex.html
+:100644 000000 736d3ede9efee01e2568e9753348065615700fea 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-gitalbBranchBuilds.html
+:100644 000000 3aefcbe6fa219a953006be5f7f158eb76cce32d5 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-labelsThatForcesBuildIfAdded.html
+:100644 000000 29fdf1b64a19513db573bdbde9f82750a3177dd2 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-messagesOnResult.html
+:100644 000000 a442c0d4175d6c6d6d98488852d262b7f6e75c9b 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-noBranchFiltering.html
+:100644 000000 90c1c4eba75e2772d93894164d413bc63149ea6d 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-noteRegex.html
+:100644 000000 73a2013219f07913ea3a6c7b0534b5c7edecc3bc 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-pendingBuildName.html
+:100644 000000 767a0d58a7bc7636e37ccee3fc1bb1799941a9b6 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-project.html
+:100644 000000 bf695d03ba06b6dce3e0e1ca243b810af55a9f71 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-secretToken.html
+:100644 000000 7dc8008436704a8156353034f1425acf45e5cf77 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-send-result-to-gitlab.html
+:100644 000000 ceb0180805fe007ad7cd5e60289d566b1d1d8ca3 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/help/help-triggerOnlyIfNewCommitsPushed.html
+:100644 000000 bc2ef601a538d69ef99d5bdafa605e63f902e8e4 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/gitlab-plugin/images/24x24/gitlab.png
+:100644 000000 571a3ec2437d0f9ca1e8ef4975fad63308cc3662 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api.jpi
+:100644 000000 3cf2af0884d4ad78537079bdb91b8909425f86b6 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/META-INF/MANIFEST.MF
+:100644 000000 4d3603df97831527651597dad9ea8e8336112af4 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/META-INF/maven/io.jenkins.plugins/jersey2-api/pom.properties
+:100644 000000 eaf0665a6f181711fc6ee9c0d49d0ff120c5b959 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/META-INF/maven/io.jenkins.plugins/jersey2-api/pom.xml
+:100644 000000 35502f09dcaa845e9ad63fa1ea6f5989cf97731a 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/aopalliance-repackaged-2.6.1.jar
+:100644 000000 03d6eb05921f28d7fdca0f7bf1af7b187cdf1a8b 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/hk2-api-2.6.1.jar
+:100644 000000 0906bd1bdaca955a54c37a2b70ed393d5aa9fcca 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/hk2-locator-2.6.1.jar
+:100644 000000 768bc48800fee6da4526f9b8cff0de1773a7bc3f 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/hk2-utils-2.6.1.jar
+:100644 000000 cee6acd2a0a81094bb1b6f8b75f2c6913301ba6d 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jakarta.inject-2.6.1.jar
+:100644 000000 5badbd6b60265f382ebd5e657600246b4182dc24 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jakarta.json-1.1.6-module.jar
+:100644 000000 1f33076558383f65899c9db0932de0c23814a10e 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jakarta.json-1.1.6.jar
+:100644 000000 fde7fc4ae443851c215c25f6203d0ec6d8116d80 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jakarta.json-api-1.1.6.jar
+:100644 000000 35b0c3e3289dddb2b6e3f2dc844dd6fd38932811 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jakarta.json.bind-api-1.0.2.jar
+:100644 000000 d68c9f7f36d2cfda66f0b89e0719b73b034143b5 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jakarta.validation-api-2.0.2.jar
+:100644 000000 aac38b59b7bcca79b3b63a29bbf900003f649232 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jakarta.ws.rs-api-2.1.6.jar
+:100644 000000 30f90f04237502d81b839eb5761b8c43f2a254ef 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/javassist-3.30.2-GA.jar
+:100644 000000 ede6bedce99ede9f9c14c96fdb9f4c4b78b0da1f 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-apache-connector-2.44.jar
+:100644 000000 a780eb9ec5514c6a7648a3ffe14d4f5c6b74dd95 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-client-2.44.jar
+:100644 000000 4d941cf231fd63c12d6cd9f30f4b22410dcd6dba 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-common-2.44.jar
+:100644 000000 d0328ea7739af81a68b7ac92baf8c34add468ce9 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-container-servlet-2.44.jar
+:100644 000000 95f3373837c28323e07164422f9953803ab88d76 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-container-servlet-core-2.44.jar
+:100644 000000 d05e914fcec76c103623738568a83a21c0f0633c 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-entity-filtering-2.44.jar
+:100644 000000 cc3de145c3c6030d59da42968f271a7f1cda5af7 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-hk2-2.44.jar
+:100644 000000 ffc5aac0563597ba6a1cf8f58f5036dfb7358a57 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-media-jaxb-2.44.jar
+:100644 000000 872006527b8040fdd847703ee050900fd74238b4 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-media-json-binding-2.44.jar
+:100644 000000 5329025d60c8a7a2d264d4d360b7107638563ac7 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-media-json-jackson-2.44.jar
+:100644 000000 73f3c9f88ee6cedd53917919af072900cf3fae96 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-media-json-jettison-2.44.jar
+:100644 000000 91c65ed36d54b8ac139d515ad5f7f638b4c65a5f 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-media-multipart-2.44.jar
+:100644 000000 e1bb8d25a89ceefe55be58bee1645db1a6d6ea4e 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-media-sse-2.44.jar
+:100644 000000 8268fa2706676740abbc9ed8e6f36fac7e597a2c 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey-server-2.44.jar
+:100644 000000 1ebcd5e0961a753f7585a3c9e08de61dbefbb8d9 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jersey2-api.jar
+:100644 000000 17c57352a3a0d86fcc60385cd4c7feafa8b46547 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/jettison-1.5.4.jar
+:100644 000000 57ff35c747a56c608406f03e3a19a036ab4c9f34 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/mimepull-1.9.15.jar
+:100644 000000 0f3c38653fb6182b0833f554340dd0c7ca7c4093 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/osgi-resource-locator-1.0.3.jar
+:100644 000000 70221eaef9c7672026798e873cd105218da4339f 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/lib/yasson-1.0.11.jar
+:100644 000000 56c75694f50a6d28bf8a7bf58f4c5072c4f21469 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/plugins/jersey2-api/WEB-INF/licenses.xml
+:100644 100644 045010d8d074bf1e578319b048a9512a09544cf3 5de2ffd5745ec05d8f9540dc49f31351ad52f4a6 M	jenkins/jenkins_home/queue.xml
+:100644 000000 0038a5c6264ecb30ab4e2dc485ae0290909fa2f1 0000000000000000000000000000000000000000 D	jenkins/jenkins_home/queue.xml.bak
+:100644 100644 9be6e1be259bcf4b35c1328d4353190765514e12 972d960a0822a1279f26e82e1b924c19a27a1010 M	jenkins/jenkins_home/secret.key
+:100644 100644 6739d8b6be8d4f545f64dca8bedfe559ac40e6fc 88888dbe43c25b206b0b2ddd132a8d1c5d31614e M	jenkins/jenkins_home/secrets/hudson.console.ConsoleNote.MAC
+:100644 100644 9d4cc85361fd62b3a495d8eda4c84eec196c42ff 3dd0dd044b1be93fab0e5c514fd879333b76c716 M	jenkins/jenkins_home/secrets/hudson.model.Job.serverCookie
+:100644 100644 efae30d2829815f03b63f56408367ed3de3b5fde 49a80d3329330404440eb01a41e70646da687a53 M	jenkins/jenkins_home/secrets/hudson.util.Secret
+:100644 100644 6c6847f18c44c6ec291e60149ce61242488417e6 747fc4099fae1fd478afde950d1bab36c46ab559 M	jenkins/jenkins_home/secrets/jenkins.model.Jenkins.crumbSalt
+:100644 100644 7703a794381ae407339f2b3d17ffe0df4f220918 4fab3c781c64b37e33893b317db49d14ec8104c4 M	jenkins/jenkins_home/secrets/master.key
+:100644 100644 d0e91e0e9c2e4f6c55780ab0089aceaaed4432f5 71ff7e488d1a4b60ca1d27321513bfa7de186b4e M	jenkins/jenkins_home/secrets/org.jenkinsci.main.modules.instance_identity.InstanceIdentity.KEY
+:000000 100644 0000000000000000000000000000000000000000 f48ad8eda70ea71d24b784389ce771ab4561c18d A	jenkins/jenkins_home/secrets/org.jenkinsci.plugins.workflow.log.ConsoleAnnotators.consoleAnnotator
+:100644 100644 88d4fb4085310518387bd9d5be88a31090142be9 6025a29f4c96fddaa46b9dac7534d20f9bb453e6 M	jenkins/jenkins_home/updates/default.json
+:100644 100644 5591503b953b1ae9ed378384f012a409e2f5b64c 5f44b9a8463fbc4eb717aa9aae4203ad40a26879 R077	jenkins/jenkins_home/users/dannnytt_3455433505414627154/config.xml	jenkins/jenkins_home/users/dannnytt_3660182044416160768/config.xml
+:100644 100644 f89eaa8c083fe99ae9ba25c72d089618c6ab9ad2 68fa153982e40a16920f1e1e1fc3940d44e6b662 M	jenkins/jenkins_home/users/users.xml
+:000000 160000 0000000000000000000000000000000000000000 77f9e3f2e6cf46aa29013adc17a85559e142e095 A	jenkins/jenkins_home/workspace/rgz
