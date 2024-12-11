@@ -29,7 +29,7 @@ pipeline {
                 script {
                     try {
                         sh """
-                            docker-compose down --rmi all --volumes --remove-orphans ${SERVICE_NAME}
+                            docker-compose down --rmi all --volumes ${SERVICE_NAME}
                         """
                     } catch (Exception e) {
                         error "Ошибка при остановке и удалении контейнера ${SERVICE_NAME}: ${e.message}"
