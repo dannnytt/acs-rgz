@@ -24,7 +24,7 @@ pipeline {
                             sh "docker rm ${CONTAINER_NAME}"
                         }
 
-                        sh "docker-compose down --rmi all --volumes"
+                        sh "docker-compose down ${SERVICE_NAME}"
                         sh "docker-compose up --build -d ${SERVICE_NAME}"
 
                     } catch (Exception e) {
