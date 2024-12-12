@@ -3,10 +3,10 @@ pipeline {
 
     environment {
         SERVICE_NAME = 'app'
-        CONTAINER_NAME = 'flask-app'
+        CONTAINER_NAME = 'flask-container'
         IMAGE_NAME = 'flask_app-image:latest'
-        DOCKERFILE_PATH = './app' // Путь к Dockerfile (корневая папка репозитория)
-        APP_PORT = '5000'    // Порт приложения
+        DOCKERFILE_PATH = './app'
+        APP_PORT = '5000'
     }
 
     stages {
@@ -39,7 +39,7 @@ pipeline {
                     if (isRunning) {
                         echo "Остановка и удаление старого контейнера..."
                         sh "docker stop ${CONTAINER_NAME} || true"
-                        sh "docker rm ${CONTAINER_NAME} || true"
+                        sh "docker rm -f ${CONTAINER_NAME} || true"
                     }
 
                     echo "Удаление неиспользуемых Docker volumes..."

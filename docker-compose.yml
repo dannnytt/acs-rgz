@@ -11,8 +11,7 @@ services:
     networks:
       - ci_cd_network
     restart: unless-stopped
-    
-  
+      
   app:
     container_name: flask-container
     build: ./app
@@ -30,8 +29,6 @@ services:
     image: nginx-image:latest
     ports:
       - "443:443"
-    depends_on:
-      - app
     volumes:
       - ./nginx/certs:/etc/ssl/nginx
     networks:
