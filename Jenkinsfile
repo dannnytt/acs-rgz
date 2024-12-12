@@ -4,6 +4,7 @@ pipeline {
     environment {
         SERVICE_NAME = 'app'
         CONTAINER_NAME = 'flask-app'
+        IMAGE_NAME = 'flask_app-image:latest'
     }
 
     stages {
@@ -22,9 +23,10 @@ pipeline {
                         if (isRunning) {
                             sh "docker stop ${CONTAINER_NAME}"
                             sh "docker rm ${CONTAINER_NAME}"
+                            sh "docker rmi ${IMAGE_NAME} "
+                            sh "docker volume rm $(docker volume ls -qf "dangling=true")"
                         }
 
-                        sh "docker-compose down ${SERVICE_NAME}"
                         sh "docker-compose up --build -d ${SERVICE_NAME}"
 
                     } catch (Exception e) {
