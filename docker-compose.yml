@@ -1,8 +1,6 @@
 services:
   jenkins:
-    user: root
-    working_dir: /var/jenkins_home/workspace/rgz
-    image: jenkins/jenkins:lts
+    build: ./jenkins
     container_name: jenkins-container
     ports:
       - "50000:50000"
@@ -41,3 +39,4 @@ services:
 
 networks:
   ci_cd_network:
+    driver: bridge

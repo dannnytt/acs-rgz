@@ -27,11 +27,16 @@ pipeline {
             steps {
                 script {
                     try {
-                        // Удаление всех старых контейнеров, связанных с сервисом app
-                        sh "docker-compose down --rmi all --volumes ${SERVICE_NAME}"
+                        def isRunning = sh(script: "docker ps -q -f name=${CONTAINER_NAME}", returnStdout: true).trim()
 
-                        // Перезапуск сервиса
+                        if (isRunning) {
+                            sh "docker stop ${CONTAINER_NAME}"
+                            sh "docker rm ${CONTAINER_NAME}"
+                        }
+
+                        // sh "docker-compose down --rmi all --volumes"
                         sh "docker-compose up -d ${SERVICE_NAME}"
+
                     } catch (Exception e) {
                         error "Ошибка при развертывании контейнера: ${e.message}"
                     }
