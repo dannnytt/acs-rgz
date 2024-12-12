@@ -13,16 +13,6 @@ pipeline {
             }
         }
 
-        stage('Сборка изображения') {
-            steps {
-                script {
-                    sh """
-                        docker-compose build ${SERVICE_NAME}
-                    """
-                }
-            }
-        }
-
         stage('Развертывание контейнера') {
             steps {
                 script {
@@ -34,8 +24,8 @@ pipeline {
                             sh "docker rm ${CONTAINER_NAME}"
                         }
 
-                        // sh "docker-compose down --rmi all --volumes"
-                        sh "docker-compose up -d ${SERVICE_NAME}"
+                        sh "docker-compose down --rmi all --volumes"
+                        sh "docker-compose up --build -d ${SERVICE_NAME}"
 
                     } catch (Exception e) {
                         error "Ошибка при развертывании контейнера: ${e.message}"
