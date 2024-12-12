@@ -38,8 +38,7 @@ pipeline {
                     def isRunning = sh(script: "docker ps -q -f name=${CONTAINER_NAME}", returnStdout: true).trim()
                     if (isRunning) {
                         echo "Остановка и удаление старого контейнера..."
-                        sh "docker stop ${CONTAINER_NAME} || true"
-                        sh "docker rm -f ${CONTAINER_NAME} || true"
+                        sh "docker stop ${CONTAINER_NAME} && docker rm ${CONTAINER_NAME} || true"
                     }
 
                     echo "Удаление неиспользуемых Docker volumes..."
@@ -49,6 +48,7 @@ pipeline {
                     sh """
                         docker run -d \
                             --name ${CONTAINER_NAME} \
+                            --network=host \
                             -p ${APP_PORT}:${APP_PORT} \
                             ${IMAGE_NAME}
                     """
