@@ -24,7 +24,9 @@ pipeline {
                             sh "docker stop ${CONTAINER_NAME}"
                             sh "docker rm ${CONTAINER_NAME}"
                             sh "docker rmi ${IMAGE_NAME} "
-                            sh "docker volume rm $(docker volume ls -qf "dangling=true")"
+                            sh """
+                                docker volume ls -qf "dangling=true" | xargs -r docker volume rm
+                            """
                         }
 
                         sh "docker-compose up --build -d ${SERVICE_NAME}"
