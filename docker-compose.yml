@@ -2,6 +2,7 @@ services:
   jenkins:
     build: ./jenkins
     container_name: jenkins-container
+    image: jenkins-image:latest
     ports:
       - "50000:50000"
       - "8080:8080"
