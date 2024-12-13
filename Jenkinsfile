@@ -29,7 +29,7 @@ pipeline {
                 script {
                     echo "Перезапуск только Flask-приложения..."
                     sh """
-                        docker-compose -f ${DOCKER_COMPOSE_FILE} up --no-deps -d ${SERVICE_NAME}
+                        docker-compose -f ${DOCKER_COMPOSE_FILE} up --no-deps --force-recreate -d ${SERVICE_NAME}
                     """
                 }
             }
