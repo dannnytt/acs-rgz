@@ -24,12 +24,18 @@ pipeline {
             }
         }
 
-        stage('Развертывание приложения') {
+        stage('Перезапуск Flask-приложения') {
             steps {
                 script {
-                    echo "Перезапуск только Flask-приложения..."
+                    echo "Остановка старого контейнера..."
                     sh """
-                        docker-compose -f ${DOCKER_COMPOSE_FILE} up --no-deps --force-recreate -d ${SERVICE_NAME}
+                        docker-compose -f ${DOCKER_COMPOSE_FILE} stop ${SERVICE_NAME}
+                        docker-compose -f ${DOCKER_COMPOSE_FILE} rm -f ${SERVICE_NAME}
+                    """
+                    
+                    echo "Запуск нового контейнера..."
+                    sh """
+                        docker-compose -f ${DOCKER_COMPOSE_FILE} up --no-deps -d ${SERVICE_NAME}
                     """
                 }
             }
