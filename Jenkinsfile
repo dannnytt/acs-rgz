@@ -35,7 +35,7 @@ pipeline {
                     
                     echo "Запуск нового контейнера..."
                     sh """
-                        docker-compose -f ${DOCKER_COMPOSE_FILE} up --no-deps -d ${SERVICE_NAME}
+                        docker-compose -f ${DOCKER_COMPOSE_FILE} up -d ${SERVICE_NAME}
                     """
                 }
             }
