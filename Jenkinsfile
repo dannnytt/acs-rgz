@@ -27,12 +27,19 @@ pipeline {
         stage('Перезапуск Flask-приложения') {
             steps {
                 script {
-                    echo "Остановка старого контейнера..."
-                    sh """
-                        docker-compose -f ${DOCKER_COMPOSE_FILE} stop ${SERVICE_NAME}
-                        docker-compose -f ${DOCKER_COMPOSE_FILE} rm -f ${SERVICE_NAME}
-                    """
-                    
+                    def containerExists = sh(
+                        script: "docker ps -aq -f name=flask-container",
+                        returnStatus: true
+                    ) == 0
+
+                    if (containerExists) {
+                        echo "Контейнер flask-container уже существует. Удаляем его..."
+                        sh """
+                            docker stop flask-container || true
+                            docker rm -f flask-container || true
+                        """
+                    }
+
                     echo "Запуск нового контейнера..."
                     sh """
                         docker-compose -f ${DOCKER_COMPOSE_FILE} up -d ${SERVICE_NAME}
