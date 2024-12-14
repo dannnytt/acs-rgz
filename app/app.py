@@ -3,6 +3,7 @@ import os
 
 app = Flask(__name__, template_folder="frontend")
 
+
 @app.route('/')
 def hello():
     container_name = os.getenv("CONTAINER_NAME")
